@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rescript": "11.1.4",
+    "@rescript/react": "0.14.0"
+  }
+}

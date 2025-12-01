@@ -1,0 +1,43 @@
+{
+  "name": "demo",
+  "uncurried": false,
+  "jsx": {
+    "version": 4
+  },
+  "bsc-flags": ["-bs-super-errors", "-open Belt"],
+  "sources": [
+    {
+      "dir": "./client-re/src",
+      "subdirs": true
+    }
+  ],
+  "bs-dependencies": ["@rescript/react"],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": true
+    },
+    {
+      "module": "esmodule"
+    }
+  ],
+  "warnings": {
+    "number": "+A-103-48-41-4-30",
+    "error": "+A-103-48-41-4-3-32-30-27-26-110"
+  },
+  "suffix": ".bs.js",
+  "gentypeconfig": {
+    "language": "typescript",
+    "module": "es6",
+    "importPath": "relative",
+    "debug": {
+      "all": false
+    },
+    "exportInterfaces": false
+  },
+  "reanalyze": {
+    "analysis": ["dce", "exception", "termination"],
+    "suppress": ["client-re/__tests__/vendor"],
+    "transitive": true
+  }
+}
